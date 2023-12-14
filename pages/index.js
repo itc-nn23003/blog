@@ -1,15 +1,12 @@
-import Header from 'components/header.js'
+import Layout from 'components/layout.js'
 import Hero from 'components/hero.js'
-import Footer from 'components/footer.js'
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <main>
+      <Layout>
         <Hero />
-      </main>
-      <Footer />
+      </Layout>
     </>
   )
 }
