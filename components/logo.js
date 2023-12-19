@@ -1,10 +1,12 @@
 import Link from 'next/link'
-
-function Test () {
+import styles from 'styles/logo.module.css'
+function Test (boxOn = false) {
   return (
     <ul>
       <li>
-        <Link href='/'>CUBE</Link>
+        <Link className={boxOn ? styles.box : styles.basic} href='/'>
+          CUBE
+        </Link>
       </li>
     </ul>
   )
