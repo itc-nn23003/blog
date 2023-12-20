@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import styles from 'styles/logo.module.css'
-function Test (boxOn = false) {
+function Test ({ boxOn = false }) {
   return (
     <ul>
       <li>
