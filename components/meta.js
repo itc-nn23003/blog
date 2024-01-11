@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+// 汎用OGP画像
+import siteImg from 'images/ogp.jpg'
+
 // サイトに関する情報
 import { siteMeta } from 'lib/constants'
 const {
@@ -11,9 +14,6 @@ const {
   siteType,
   siteIcon
 } = siteMeta
-
-// 汎用OGP画像
-import siteImg from 'images/ogp.jpg'
 
 const Meta = ({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) => {
   // ページのタイトル
